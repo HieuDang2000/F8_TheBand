@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header {
+    height: 46px;
+    background-color: black;
+}
+#nav li {
+    display: inline-block;
+}
+#nav li .subnav {
+    display: ;
+    position: absolute;;
+}
