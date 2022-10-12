@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
     <title>header đấy</title>
 </head>
 <body>
     <div id="main">
         <div id="header">
+            <!-- Begin: Nav  -->
             <ul id="nav">
                 <li><a href="">Home</a></li>
                 <li><a href="">band</a></li>
                 <li><a href="">tour</a></li>
                 <li><a href="">contact</a></li>
                 <li>
-                    <a href="">More</a>
+                    <a href="">More <i class="ti-angle-down"></i></a>
                     <ul class="subnav">
                         <li><a href="">Merchandise</a></li>
                         <li><a href="">Extras</a></li>
@@ -24,17 +26,70 @@
                     </ul>
                 </li>
             </ul>
+            <!-- End: Nav  -->
+
+            <!-- Begin: Search Button  -->
+            <div class="search-btn">
+                <i class="ti-search"></i>
+            </div>
+            <!-- End: Search Button  -->
         </div>
         
         <div id="slider">
-
+            <div class="text-content">
+                <div class="text-heading">New York</div>
+                <div class="text-decription">The atmosphere in New York is lorem ipsum.</div>
+            </div>
         </div>
-        
+
         <div id="content">
-
+            <!-- About Section  -->
+            <div class="content-section">
+                <h1 class="section-heading">THE BAND</h1>
+                <p class="section-sub-heading"><i>We love music</i></p>
+                <p class="section-text-content">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <!-- Member Info -->
+                <div class="members-list">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/singer/1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/singer/1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/singer/1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- Tour Section  -->
+            <div class="parent-tour">
+                <div class="tour content-section">
+                    <h1 class="section-heading">TOUR DATES</h1>
+                    <p class="section-sub-heading"><i>Remember to book your tickets!</i></p>
+                    <!-- Ticket-sell section  -->
+                    <ul class="tickets-list">
+                        <li>September<span class="sold-out">Sold-out</span><div class="clear"></div></li>
+                        <li>October<span class="sold-out">Sold-out</span><div class="clear"></div></li>
+                        <li>November <span class="quantity">3</span><div class="clear"></div></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Section  -->
+            <div class="content-section">
+                <h1 class="section-heading">CONTACT</h1>
+                <p class="section-sub-heading"><i>Fan? Drop a note!</i></p>
+            </div>
         </div>
-        
+
         <div id="footer">
+
 
         </div>
     </div>
