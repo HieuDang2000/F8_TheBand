@@ -220,6 +220,7 @@ html {
             margin-bottom: 20px;
         }
         .places-list .place-buy-btn {
+            /* remove small dark line  */
             display: inline-block;
             padding: 10px 12px;
             color: white;
@@ -228,6 +229,7 @@ html {
         }
         .places-list .place-buy-btn:hover {
             opacity: 0.7;
+            cursor: pointer;
         }
 
 #footer {
@@ -239,3 +241,106 @@ html {
 .clear {
     clear: both;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.3);
+}
+.modal .container {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 60%;
+    background-color: #fff;
+    animation: modalFadein ease 1;
+    }
+        .modal .container .head {
+            position: relative;
+            height: 25%;
+            background-color: #009688;
+            letter-spacing: 6px;
+        } 
+        .modal .head .content {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+            .modal .head .ti-bag, .model .head .tickets {
+                display: inline-block;
+                margin-right: 10px;
+                letter-spacing:  4px;
+                font-weight: 400;
+            }
+            .modal .head .ti-close {
+                position: absolute;
+                right: 0px;
+                padding: 20px 20px;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+            }
+                .modal .head .ti-close:hover {
+                    color: black;
+                    background-color: #ccc;
+                    cursor: pointer;
+                }
+        .modal .body {
+            display: flex;
+            flex-direction:column;
+            height: 75%;
+            padding: 20px 30px;
+            font-weight: 600;
+        }
+            .modal .body .modal-label {
+                margin: 8px 0;
+                height: 10%;
+            }
+            .modal .body .modal-input {
+                margin: 5px 0;
+                height: 15%;
+            }
+            .modal .body #buy-tickets {
+                background-color: #009688;
+                margin: 5px 0;
+                border-style: none;
+                height: 15%;
+            }
+        .modal .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0;
+            height: 25%;
+        }
+        .modal .footer #close {
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color: red;
+        }
+            .modal .footer #close:hover{
+                color: black;
+                background-color: #ccc;
+                cursor: pointer;
+            }
+.open {
+    display: flex;
+} 
+@keyframes modalFadein {
+    from {
+        opacity: 0.2;
+        transform: translateX(-1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}   
